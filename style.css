@@ -4,7 +4,7 @@
     --color-tertiary: #C4C4C4;
     --color-button: #fe652b;
     --color-button-hover: #e55720;
-    --color-text: #444444;
+    --color-text: #0f0f0f;
     --color-white: #FFFFFF;
 }
 
@@ -129,11 +129,13 @@ button {
 
 /* Listas */
 ul {
+    align-items: center;
     list-style-type: none;
     color: var(--color-text);
     font-family: "Inter", sans-serif;
     font-size: 18px;
     margin: 20px 0;
+    text-align: center;
 }
 
 .result-list {
@@ -142,7 +144,27 @@ ul {
     font-size: 22px;
     font-weight: bold;
     text-align: center;
+    align-items: center;
 }
+
+.result-list li {
+    background-color: #e0ffe0; 
+    border: 2px solid #05DF05; 
+    border-radius: 10px;  
+    align-items: center;
+    text-align: center;
+    padding: 5px;  
+    margin: 5px auto;         
+    width: fit-content; 
+    transition: transform 0.3s ease; 
+}
+
+.result-list li:hover {
+    transform: scale(1.1); 
+    background-color: #b3ffb3;  
+    cursor: pointer;
+}
+
 
 /* Botão de sortear título */
 .button-draw {
