@@ -1,46 +1,46 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
+    --color-primary: #4b69fd;
+    --color-secondary: #fff9eb;
+    --color-tertiary: #c4c4c4;
     --color-button: #fe652b;
     --color-button-hover: #e55720;
     --color-text: #0f0f0f;
-    --color-white: #FFFFFF;
-}
-
-/* Estilos gerais */
-* {
+    --color-white: #ffffff;
+  }
+  
+  /* Estilos gerais */
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     height: 100vh;
     background-color: var(--color-primary);
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.main-content {
+  }
+  
+  .main-content {
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 100%;
-}
-
-/* Banner */
-.header-banner {
+  }
+  
+  /* Banner */
+  .header-banner {
     flex: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px 0 0;
-}
-
-/* Seção de entrada */
-.input-section {
+  }
+  
+  /* Seção de entrada */
+  .input-section {
     flex: 60%;
     background-color: var(--color-secondary);
     border: 1px solid #000;
@@ -50,10 +50,10 @@ body {
     align-items: center;
     padding: 20px;
     width: 100%;
-}
-
-/* Títulos */
-.main-title {
+  }
+  
+  /* Títulos */
+  .main-title {
     font-size: 48px;
     font-family: "Merriweather", serif;
     font-weight: 900;
@@ -61,41 +61,46 @@ body {
     color: var(--color-white);
     z-index: 1;
     position: relative;
-}
-
-.section-title {
+  }
+  
+  .section-title {
     font-family: "Inter", serif;
     font-size: 36px;
     font-weight: 700;
     color: var(--color-primary);
     margin: 10px 0;
     text-align: center;
-}
-
-/* Contêineres de entrada e botão */
-.input-wrapper {
+  }
+  
+  /* Contêineres de entrada e botão */
+  .input-wrapper {
     display: flex;
     justify-content: center;
     width: 100%;
     max-width: 600px;
     margin-top: 20px;
-}
-
-.input-name {
+  }
+  
+  .input-name {
     width: 100%;
     padding: 10px;
     border: 2px solid #000;
     border-radius: 25px 0 0 25px;
     font-size: 16px;
-}
-
-.button-container {
-    width: 300px;
-    justify-content: center;
-}
-
-/* Estilos de entrada de texto */
-.input-title {
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    align-items: center;
+    width: 100%; 
+    max-width: 300px; 
+    margin: 20px auto; 
+  }
+  
+  /* Estilos de entrada de texto */
+  .input-title {
     flex: 1;
     padding: 10px 15px;
     font-size: 16px;
@@ -104,31 +109,48 @@ body {
     border-radius: 25px 0 0 25px;
     font-family: "Merriweather", serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Estilos de botão */
-button {
-    padding: 15px 30px;
+  }
+  
+  /* Estilos de botão */
+  button {
+    padding: 15px 30px; 
     font-family: "Inter", sans-serif;
     font-size: 16px;
     border: 2px solid #000;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-}
-
-.button-add {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Botão adicionar */
+  .button-add {
     background-color: var(--color-tertiary);
     color: var(--color-text);
-    border-radius: 0 25px 25px 0;
-}
-
-.button-add:hover {
+    width: 135px;
+  }
+  
+  .button-add:hover {
     background-color: #a1a1a1;
-}
-
-/* Listas */
-ul {
+  }
+  
+ /* Botão de reiniciar sorteio */
+.button-reset {
+    background-color: var(--color-button);
+    color: var(--color-white);
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
+  }
+  
+  .button-reset:hover {
+    background-color: var(--color-button-hover);
+  }
+  
+  /* Listas */
+  ul {
     align-items: center;
     list-style-type: none;
     color: var(--color-text);
@@ -136,110 +158,180 @@ ul {
     font-size: 18px;
     margin: 20px 0;
     text-align: center;
-}
-
-.result-list {
+  }
+  
+  .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    color: #05df05;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
     align-items: center;
-}
-
-.result-list li {
-    background-color: #e0ffe0; 
-    border: 2px solid #05DF05; 
-    border-radius: 10px;  
+  }
+  
+  .result-list li {
+    background-color: #e0ffe0;
+    border: 2px solid #05df05;
+    border-radius: 10px;
     align-items: center;
     text-align: center;
-    padding: 5px;  
-    margin: 5px auto;         
-    width: fit-content; 
-    transition: transform 0.3s ease; 
-}
-
-.result-list li:hover {
-    transform: scale(1.1); 
-    background-color: #b3ffb3;  
+    padding: 5px;
+    margin: 5px auto;
+    width: fit-content;
+    transition: transform 0.3s ease;
+  }
+  
+  .result-list li:hover {
+    transform: scale(1.1);
+    background-color: #b3ffb3;
     cursor: pointer;
-}
-
-
-/* Botão de sortear título */
-.button-draw {
+  }
+  
+  /* Botão de sortear título */
+  .button-draw {
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 8px;
     width: 100%;
     padding: 10px 40px;
     color: var(--color-white);
     background-color: var(--color-button);
     font-size: 16px;
-}
-
-.button-draw img {
+  }
+  
+  .button img {
     margin-right: 40px;
-}
-
-.button-draw:hover {
+    align-items: center;
+  }
+  
+  .button-draw:hover {
     background-color: var(--color-button-hover);
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
+  }
+  
+  /* style alerts */
+  .alert {
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+  
+  #custom-alert-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .custom-alert {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    animation: fadeIn 0.3s ease-out, fadeOut 0.3s ease-in 4s forwards;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .custom-alert.success {
+    background-color: #28a745;
+  }
+  
+  .custom-alert.warning {
+    background-color: #ffc107;
+  }
+  
+  .custom-alert.error {
+    background-color: #dc3545;
+  }
+  
+  .custom-alert.info {
+    background-color: #17a2b8;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
     .main-title {
-        font-size: 36px;
-        margin-top: 10px;
+      font-size: 36px;
+      margin-top: 10px;
     }
-
+  
     .header-banner {
-        padding: 20px 0;
+      padding: 20px 0;
     }
-
+  
     .input-section {
-        padding: 15px;
-        border-radius: 32px 32px 0 0;
+      padding: 15px;
+      border-radius: 32px 32px 0 0;
     }
-
-    .input-title, .input-name {
-        font-size: 14px;
-        padding: 8px 12px;
+  
+    .input-title,
+    .input-name {
+      font-size: 14px;
+      padding: 8px 12px;
     }
-
+  
     button {
-        padding: 10px 20px;
-        font-size: 14px;
+      padding: 10px 20px;
+      font-size: 14px;
     }
-
+  
     .button-draw {
-        padding: 8px 20px;
+      padding: 8px 20px;
     }
-}
-
-@media (max-width: 480px) {
+  }
+  
+  @media (max-width: 480px) {
     .main-title {
-        font-size: 28px;
-        margin-top: 20px;
-        z-index: 2;
-        position: relative;
+      font-size: 28px;
+      margin-top: 20px;
+      z-index: 2;
+      position: relative;
     }
-
+  
     .header-banner {
-        flex-direction: column;
-        padding: 10px 0;
+      flex-direction: column;
+      padding: 10px 0;
     }
-
+  
     .button-draw img {
-        margin-right: 10px;
+      margin-right: 10px;
     }
-
-    .input-title, .input-name {
-        font-size: 12px;
-        padding: 6px 10px;
+  
+    .input-title,
+    .input-name {
+      font-size: 12px;
+      padding: 6px 10px;
     }
-
+  
     button {
-        padding: 8px 16px;
-        font-size: 12px;
+      padding: 8px 16px;
+      font-size: 12px;
     }
-}
+  }
+  
