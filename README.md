@@ -46,5 +46,5 @@ Adicione aqui uma imagem demonstrando o funcionamento do aplicativo:
 Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
-Desenvolvido com 💙 por [- **Maria Viana** - [GitHub](https://github.com/mariaviana) | [LinkedIn](https://linkedin.com/in/mariaviana)].
+Desenvolvido com 💙 por [- **Maria Viana** - [GitHub](https://github.com/Marian97a) | [LinkedIn](https://www.linkedin.com/in/maria-viana-nas/)].
 
